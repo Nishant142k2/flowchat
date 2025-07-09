@@ -1,0 +1,50 @@
+
+.flow-builder {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left panel with node types */
+.nodes-panel {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 16px;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Each draggable node item */
+.node-item {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: grab;
+  user-select: none;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.node-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Canvas styling */
+.flow-canvas {
+  flex-grow: 1;
+  position: relative;
+  background-color: #fafafa;
+}
+
+/* Custom node styling */
+.text-node {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
